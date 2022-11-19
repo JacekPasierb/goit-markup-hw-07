@@ -43,6 +43,12 @@ a:focus {
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
 }
+/* ===================== >   REPEAT < ===============================*/
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
 /* ===================== >   LOGO < ===============================*/
 .logo {
@@ -245,11 +251,7 @@ height:16px;
   letter-spacing: 00.03em;
   color: var(--background-color-three);
 }
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
+
 .flex-center {
   display: flex;
   align-items: center;
