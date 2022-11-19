@@ -64,7 +64,7 @@ a:focus {
   margin: 24px 93px 25px 0px;
 }
 
-/* ===================== >   NAWIGACJA  < ===============================*/
+/* ===================== >   NAV  < ===============================*/
 .navigation {
   display: flex;
   gap: 46px;
@@ -92,10 +92,31 @@ a:focus {
   border-radius: 2px;
 }
 
-/* --------------------------------------------------------------------- */
-
-.menu-contact-style {
+/* ===================== >   CONTACT < ===============================*/
+.contact__link {
   color: var(--background-color-three);
+
+fill: #757575;
+
+  /* will-change: fill; */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__link:hover {
+  fill: #2196f3;
+}
+.contact__icon {
+margin-right: 10px;
+}
+.contact .contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact__icon-envelope {
+width:16px;
+height:12px;
+}
+.contact__icon-smartphone {
+width:10px;
+height:16px;
 }
 .footer-style {
   font-size: 14px;
@@ -268,9 +289,6 @@ h1 {
   width: 696px;
   height: 120px;
 }
-.menu li:not(:last-child) {
-  margin-right: 50px;
-}
 .text-article li:not(:last-child) {
   margin-right: 30px;
 }
@@ -346,10 +364,6 @@ nav {
 
   border: 1px solid #2196f3;
 }
-
-.menu-contact-style svg {
-  margin-right: 10px;
-}
 .head-in-footer {
   font-weight: 700;
   font-size: 14px;
@@ -409,15 +423,7 @@ footer .social-list-link {
   align-items: center;
   justify-content: center;
 }
-.icon-contact {
-  fill: #757575;
 
-  /* will-change: fill; */
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-contact:hover {
-  fill: #2196f3;
-}
 .image-competention {
   position: relative;
 }
