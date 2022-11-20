@@ -36,6 +36,11 @@ a:focus {
   letter-spacing: 00.03em;
   margin-bottom: 50px;
 }
+.image-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
 
 :root {
   --color-text: #ffffff;
@@ -218,11 +223,7 @@ a:focus {
   height: 70px;
 }
 /* ===================== >  WHAT DOING < ===============================*/
-.what-doing__list {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-}
+
 .what-doing__item {
   position: relative;
 }
