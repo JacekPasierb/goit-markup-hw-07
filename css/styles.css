@@ -283,6 +283,9 @@ footer .social__link {
   fill: #ffffff;
 }
 /* ===================== > TEAM < ===============================*/
+.team {
+  background-color: var(--background-color-two);
+}
 .team__card {
   background: var(--color-text);
   border-radius: 0px 0px 4px 4px;
@@ -335,36 +338,49 @@ footer .social__link {
   width: 106px;
   height: 60px;
 }
-/* ===================== > ----< ===============================*/
-
-.footer-style {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 00.03em;
-  color: var(--color-text);
+/* ===================== > ADRESS < ===============================*/
+.adress {
   margin-top: 20px;
+}
+.adress__item {
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-.footer-style ul {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-}
-.footer-contact-style {
+.adress__link {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 00.03em;
   color: #ffffff99;
 }
-.footer-background {
+.adress__link__place {
+  color: var(--color-text);
+}
+ul:not(.adress) {
+  list-style: none;
+  display: flex;
+}
+/* ===================== > ----- < ===============================*/
+.footer__head {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.form__footer__head {
+  display: block;
+}
+.come-in {
+  margin-left: 70px;
+}
+.footer {
   background-color: var(--background-color);
   padding-block: 60px;
 }
-.team {
-  background-color: var(--background-color-two);
-}
+
 .head-style {
   font-size: 44px;
   font-weight: 900;
@@ -417,10 +433,7 @@ footer .social__link {
   display: flex;
   align-items: center;
 }
-ul:not(.footer-style) {
-  list-style: none;
-  display: flex;
-}
+
 header {
   border-bottom: 1px solid #ececec;
 }
@@ -475,16 +488,8 @@ nav {
   display: block;
 }
 
-.head-in-footer {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding-bottom: 20px;
-}
-.flex-footer {
+
+.footer__flex {
   display: flex;
   align-items: baseline;
 }
@@ -707,12 +712,8 @@ nav {
   color: rgba(33, 150, 243, 1);
   margin-inline: 4px;
 }
-.footer-background .come-in {
-  margin-left: 70px;
-}
-.form-newsletter .head-in-footer {
-  display: block;
-}
+
+
 .form-newsletter .icon-newsletter {
   width: 24px;
   height: 24px;
