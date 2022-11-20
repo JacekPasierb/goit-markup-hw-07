@@ -308,6 +308,34 @@ footer .social__link {
   color: var(--background-color-three);
   padding-bottom: 16px;
 }
+/* ===================== > CLIENT < ===============================*/
+.client__item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+
+  /* will-change: border, fill; */
+  transition: border 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client__item:hover,
+.client__item:focus {
+  fill: #2196f3;
+
+  border: 1px solid #2196f3;
+}
+.client__icon {
+  width: 106px;
+  height: 60px;
+}
+/* ===================== > ----< ===============================*/
 
 .footer-style {
   font-size: 14px;
@@ -446,31 +474,7 @@ nav {
 .no-gap {
   display: block;
 }
-.border-client {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: #afb1b8;
 
-  /* will-change: border, fill; */
-  transition: border 250ms, fill 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-client {
-  width: 106px;
-  height: 60px;
-}
-.border-client:hover,
-.border-client:focus {
-  fill: #2196f3;
-
-  border: 1px solid #2196f3;
-}
 .head-in-footer {
   font-weight: 700;
   font-size: 14px;
