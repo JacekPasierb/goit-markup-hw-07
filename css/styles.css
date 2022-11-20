@@ -256,7 +256,7 @@ a:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -282,7 +282,32 @@ footer .social__link {
   background-color: #ffffff1a;
   fill: #ffffff;
 }
-/* ===================== > ----- < ===============================*/
+/* ===================== > TEAM < ===============================*/
+.team__card {
+  background: var(--color-text);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team__details {
+  display: flex;
+  flex-direction: column;
+  padding-block: 30px;
+  gap: 10px;
+}
+.team__name {
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 00.03em;
+}
+.team__profession {
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 00.03em;
+  color: var(--background-color-three);
+  padding-bottom: 16px;
+}
 
 .footer-style {
   font-size: 14px;
@@ -309,7 +334,7 @@ footer .social__link {
   background-color: var(--background-color);
   padding-block: 60px;
 }
-.our-team {
+.team {
   background-color: var(--background-color-two);
 }
 .head-style {
@@ -322,20 +347,6 @@ footer .social__link {
   text-transform: uppercase;
   display: flex;
   margin-bottom: 30px;
-}
-
-.name-worker {
-  font-weight: 500;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 00.03em;
-}
-.employee-specialization {
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 00.03em;
-  color: var(--background-color-three);
-  padding-bottom: 16px;
 }
 .style-text-button {
   font-weight: 700;
@@ -411,18 +422,6 @@ h1 {
 }
 nav {
   flex-grow: 1;
-}
-.personal {
-  display: flex;
-  flex-direction: column;
-  padding-block: 30px;
-  gap: 10px;
-}
-.border-gap-image {
-  background: var(--color-text);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .border-card-set {
   background: var(--color-text);
