@@ -247,7 +247,42 @@ a:focus {
   background-image: linear-gradient(#2f303acc, #2f303acc);
   padding: 27px 90px;
 }
-/* ===================== >  ----- < ===============================*/
+/* ===================== >  SOCIAL < ===============================*/
+.social__icon {
+  width: 20px;
+  height: 20px;
+}
+.social__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+
+  /* will-change:background-color, fill; */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__link:hover,
+.social__link:focus {
+  fill: #ffffff;
+  background-color: var(--one-color-logo);
+  cursor: pointer;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+footer .social__link {
+  background-color: #ffffff1a;
+  fill: #ffffff;
+}
+/* ===================== > ----- < ===============================*/
 
 .footer-style {
   font-size: 14px;
@@ -449,40 +484,6 @@ nav {
 .flex-footer {
   display: flex;
   align-items: baseline;
-}
-.social-icon {
-  width: 20px;
-  height: 20px;
-}
-.social-list-link:hover,
-.social-list-link:focus {
-  fill: #ffffff;
-
-  background-color: var(--one-color-logo);
-  cursor: pointer;
-}
-.social-list-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  fill: #afb1b8;
-
-  /* will-change:background-color, fill; */
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-footer .social-list-link {
-  background-color: #ffffff1a;
-  fill: #ffffff;
-}
-.social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
 .box {
   position: relative;
