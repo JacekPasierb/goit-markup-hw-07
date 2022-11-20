@@ -472,19 +472,16 @@
             <label class="footer__head form__footer__head" for="email"
               >Zapisz się do newslettera</label
             >
-            <div class="flex-newsletter">
+            <div class="form-newsletter__flex">
               <input
-                class="input"
+                class="form-newsletter__input"
                 name="email"
                 type="email"
                 id="email"
                 placeholder="Email"
-              /><button
-                class="style-text-button background-button"
-                type="submit"
-              >
-                <span>Zapisz się</span>
-                <svg class="icon-newsletter">
+              /><button class="button form-newsletter__button" type="submit">
+                <span class="button__label">Zapisz się</span>
+                <svg class="form-newsletter__button__icon">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
@@ -548,8 +545,8 @@
               </svg>
             </label>
           </div>
-          <button class="style-text-button background-button" type="submit">
-            Wyślij
+          <button class="button modal__button" type="submit">
+            <span class="button__label">Wyślij</span>
           </button>
         </form>
       </div>
