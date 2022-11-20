@@ -124,8 +124,37 @@ height:12px;
 width:10px;
 height:16px;
 }
-/* ===================== >   --- < ===============================*/
-
+/* ===================== >   HEAD < ===============================*/
+.head {
+  display: flex;
+    padding-block: 200px;
+    background-color: var(--background-color);
+  }
+  .head__overlays {
+    margin: 0 auto;
+   background-image: linear-gradient(#2f303a66, #2f303a66),
+       url(../images/Img.jpg);
+     background-size: cover;
+     max-width: 1600px;
+   }
+   .head__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .head__tittle{
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: var(--color-text);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 30px;
+ /* ===================== >   ---- < ===============================*/
+  
 .footer-style {
   font-size: 14px;
   line-height: 1.7;
@@ -150,17 +179,6 @@ height:16px;
 .footer-background {
   background-color: var(--background-color);
   padding-block: 60px;
-}
-.background-banner {
-  display: flex;
-  padding-block: 200px;
-  background-color: var(--background-color);
-  margin: 0 auto;
-
-  background-image: linear-gradient(#2f303a66, #2f303a66),
-    url(../images/Img.jpg);
-  background-size: cover;
-  max-width: 1600px;
 }
 .our-team {
   background-color: var(--background-color-two);
@@ -299,12 +317,7 @@ h1 {
 nav {
   flex-grow: 1;
 }
-.flex-head {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .text-article h3 {
   margin-bottom: 10px;
 }
