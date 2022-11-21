@@ -2,6 +2,21 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
 }
+
+/* ===================== >   RESET < ===============================*/
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+figure,
+fieldset {
+  margin: 0;
+  padding: 0px;
+}
+/* ===================== >   REPEAT < ===============================*/
 button {
   /* will-change: transition; */
   transition: color 250ms;
@@ -41,6 +56,21 @@ a:focus {
   gap: 30px;
   align-items: flex-start;
 }
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.block {
+  display: block;
+}
+.footer__flex {
+  display: flex;
+  align-items: baseline;
+}
 
 :root {
   --color-text: #ffffff;
@@ -50,8 +80,9 @@ a:focus {
   --one-color-logo: #2196f3;
   --two-color-logo: #000000;
 }
-
-/* ===================== >   REPEAT < ===============================*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -74,11 +105,14 @@ a:focus {
 .logo:focus {
   color: var(--two-color-logo);
 }
-.logo__margin {
+.header_logo {
   margin: 24px 93px 25px 0px;
 }
 
 /* ===================== >   NAV  < ===============================*/
+.nav {
+  flex-grow: 1;
+}
 .navigation {
   display: flex;
   gap: 46px;
@@ -152,6 +186,8 @@ a:focus {
   align-items: center;
 }
 .head__tittle {
+  width: 696px;
+  height: 120px;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
@@ -553,7 +589,7 @@ ul:not(.adress) {
 
   color: #757575;
 }
-.checkbox-accept .checkbox {
+.checkbox-accept .checkbox-accept__checkbox {
   width: 0;
   height: 0;
   opacity: 0;
@@ -590,15 +626,14 @@ ul:not(.adress) {
 .checkbox-accept__label input:checked ~ .checkbox__icon__icon-bird {
   display: inline-block;
 }
-/* ===================== > ------ < ===============================*/
-
+/* ===================== > FILTER PORTFOLIO < ===============================*/
 .filter {
   display: flex;
   justify-content: center;
   gap: 9px;
   margin-bottom: 50px;
 }
-.filter button {
+.filter__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -608,54 +643,13 @@ ul:not(.adress) {
   border: hidden;
   border-radius: 4px;
 }
-.title-project {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 00.06em;
-}
-.type-project {
-  line-height: 1.9;
-  letter-spacing: 00.03em;
-  color: var(--background-color-three);
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-}
-
-header {
-  border-bottom: 1px solid #ececec;
-}
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-figure,
-fieldset {
-  margin: 0;
-  padding: 0px;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.card-set {
+/* ===================== > CARDS PORTFOLIO < ===============================*/
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-h1 {
-  width: 696px;
-  height: 120px;
-}
-nav {
-  flex-grow: 1;
-}
-.border-card-set {
+.card {
   background: var(--color-text);
 
   margin-bottom: 25px;
@@ -664,30 +658,18 @@ nav {
   /* will-change: box-shadow; */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.border-card-set:hover {
+.card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card-set-tittle {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 24px;
-  gap: 4px;
-  border: 1px solid #eeeeee;
-}
-.no-gap {
-  display: block;
-}
-
-.footer__flex {
-  display: flex;
-  align-items: baseline;
-}
-.box {
+.card__box {
   position: relative;
   overflow: hidden;
 }
-.overlay-box {
+.card__display {
+  display: block;
+}
+.card__overlay-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -699,10 +681,10 @@ nav {
   /* will-change: transform; */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.border-card-set:hover .overlay-box {
+.card:hover .card__overlay-box {
   transform: translateY(0);
 }
-.overlay-text-style {
+.card__overlay-description {
   display: flex;
   font-size: 18px;
   line-height: 1.5;
@@ -710,6 +692,22 @@ nav {
   color: #ffffff;
   padding: 49px 45px 49px 24px;
 }
-.block {
-  display: block;
+.card__project {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  gap: 4px;
+  border: 1px solid #eeeeee;
 }
+.card__tittle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 00.06em;
+}
+.card__type {
+  line-height: 1.9;
+  letter-spacing: 00.03em;
+  color: var(--background-color-three);
+}
+/* ===================== > ------ < ===============================*/

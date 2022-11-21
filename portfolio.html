@@ -18,12 +18,12 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container flex-center">
-        <a class="logo logo__margin" href="/"
+        <a class="logo header_logo" href="/"
           ><span class="logo-overlay">Web</span>Studio</a
         >
-        <nav>
+        <nav class="nav">
           <ul class="navigation">
             <li class="navigation__item">
               <a class="navigation__link" href="./index.html" target="_self"
@@ -66,218 +66,224 @@
     <main>
       <section class="section container">
         <ul class="filter">
-          <li><button type="button">Wszystkie</button></li>
-          <li><button type="button">Strony</button></li>
-          <li><button type="button">Aplikacje</button></li>
-          <li><button type="button">Dizajn</button></li>
-          <li><button type="button">Marketing</button></li>
-        </ul>
-        <ul class="card-set">
           <li>
-            <figure class="border-card-set">
-              <div class="box">
+            <button class="filter__button" type="button">Wszystkie</button>
+          </li>
+          <li><button class="filter__button" type="button">Strony</button></li>
+          <li>
+            <button class="filter__button" type="button">Aplikacje</button>
+          </li>
+          <li><button class="filter__button" type="button">Dizajn</button></li>
+          <li>
+            <button class="filter__button" type="button">Marketing</button>
+          </li>
+        </ul>
+        <ul class="cards">
+          <li>
+            <figure class="card">
+              <div class="card__box">
                 <img
-                  class="no-gap"
+                  class="card__display"
                   src="./images/technocrack.jpg"
                   alt="zdjęcie strony
               internetowej"
                   width="370"
                   height="294"
                 />
-                <p class="overlay-box overlay-text-style">
+                <p class="card__overlay-box card__overlay-description">
                   Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy wykorzystują tę
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="card-set-tittle">
-                <p class="title-project">Technocrack</p>
-                <p class="type-project">Strona internetowa</p>
+              <figcaption class="card__project">
+                <p class="card__tittle">Technocrack</p>
+                <p class="card__type">Strona internetowa</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure class="border-card-set">
-              <div class="box">
+            <figure class="card">
+              <div class="card__box">
                 <img
-                  class="no-gap"
+                  class="card__display"
                   src="./images/grafikanew.jpg"
                   alt="grafika Orleanu"
                   width="370"
                   height="294"
                 />
-                <p class="overlay-box overlay-text-style">
+                <p class="card__overlay-box card__overlay-description">
                   Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy wykorzystują tę
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="card-set-tittle">
-                <p class="title-project">Grafika New Orlean vs Golden Star</p>
-                <p class="type-project">Dizajn</p>
+              <figcaption class="card__project">
+                <p class="card__tittle">Grafika New Orlean vs Golden Star</p>
+                <p class="card__type">Dizajn</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure class="border-card-set">
-              <div class="box">
+            <figure class="card">
+              <div class="card__box">
                 <img
-                  class="no-gap"
+                  class="card__display"
                   src="./images/restauration.jpg"
                   alt="logo aplikacji"
                   width="370"
                   height="294"
                 />
-                <p class="overlay-box overlay-text-style">
+                <p class="card__overlay-box card__overlay-description">
                   Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy wykorzystują tę
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="card-set-tittle">
-                <p class="title-project">Restauracja Seafood</p>
-                <p class="type-project">Aplikacja</p>
+              <figcaption class="card__project">
+                <p class="card__tittle">Restauracja Seafood</p>
+                <p class="card__type">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure class="border-card-set">
-              <div class="box">
+            <figure class="card">
+              <div class="card__box">
                 <img
-                  class="no-gap"
+                  class="card__display"
                   src="./images/projektprime.jpg"
                   alt="obraz projektu prime"
                   width="370"
                   height="294"
                 />
-                <p class="overlay-box overlay-text-style">
+                <p class="card__overlay-box card__overlay-description">
                   Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy wykorzystują tę
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="card-set-tittle">
-                <p class="title-project">Projekt Prime</p>
-                <p class="type-project">Marketing</p>
+              <figcaption class="card__project">
+                <p class="card__tittle">Projekt Prime</p>
+                <p class="card__type">Marketing</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure class="border-card-set">
-              <div class="box">
+            <figure class="card">
+              <div class="card__box">
                 <img
-                  class="no-gap"
+                  class="card__display"
                   src="./images/projektboxes.jpg"
                   alt="logo aplikacji box"
                   width="370"
                   height="294"
                 />
-                <p class="overlay-box overlay-text-style">
+                <p class="card__overlay-box card__overlay-description">
                   Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy wykorzystują tę
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="card-set-tittle">
-                <p class="title-project">Projekt Boxes</p>
-                <p class="type-project">Aplikacja</p>
+              <figcaption class="card__project">
+                <p class="card__tittle">Projekt Boxes</p>
+                <p class="card__type">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure class="border-card-set">
-              <div class="box">
+            <figure class="card">
+              <div class="card__box">
                 <img
-                  class="no-gap"
+                  class="card__display"
                   src="./images/inspiration.jpg"
                   alt="logo strony inspiration"
                   width="370"
                   height="294"
                 />
-                <p class="overlay-box overlay-text-style">
+                <p class="card__overlay-box card__overlay-description">
                   Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy wykorzystują tę
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="card-set-tittle">
-                <p class="title-project">Inspiration has no Borders</p>
-                <p class="type-project">Strona internetowa</p>
+              <figcaption class="card__project">
+                <p class="card__tittle">Inspiration has no Borders</p>
+                <p class="card__type">Strona internetowa</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure class="border-card-set">
-              <div class="box">
+            <figure class="card">
+              <div class="card__box">
                 <img
-                  class="no-gap"
+                  class="card__display"
                   src="./images/design.jpg"
                   alt="zdjęcie magazynu"
                   width="370"
                   height="294"
                 />
-                <p class="overlay-box overlay-text-style">
+                <p class="card__overlay-box card__overlay-description">
                   Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy wykorzystują tę
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="card-set-tittle">
-                <p class="title-project">Magazyn Limited Edition</p>
-                <p class="type-project">Dizajn</p>
+              <figcaption class="card__project">
+                <p class="card__tittle">Magazyn Limited Edition</p>
+                <p class="card__type">Dizajn</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure class="border-card-set">
-              <div class="box">
+            <figure class="card">
+              <div class="card__box">
                 <img
-                  class="no-gap"
+                  class="card__display"
                   src="./images/projectlab.jpg"
                   alt="obraz projektu lab"
                   width="370"
                   height="294"
                 />
-                <p class="overlay-box overlay-text-style">
+                <p class="card__overlay-box card__overlay-description">
                   Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy wykorzystują tę
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="card-set-tittle">
-                <p class="title-project">Projekt LAB</p>
-                <p class="type-project">Marketing</p>
+              <figcaption class="card__project">
+                <p class="card__tittle">Projekt LAB</p>
+                <p class="card__type">Marketing</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure class="border-card-set">
-              <div class="box">
+            <figure class="card">
+              <div class="card__box">
                 <img
-                  class="no-gap"
+                  class="card__display"
                   src="./images/growing.jpg"
                   alt="logo aplikacji growing"
                   width="370"
                   height="294"
                 />
-                <p class="overlay-box overlay-text-style">
+                <p class="card__overlay-box card__overlay-description">
                   Technocrack jest popularną platformą wykorzystywaną do
                   rozpowszechniania koronawirusa. Firmy wykorzystują tę
                   platformę do celów szpiegowskich i ataków na niezabezpieczone
                   serwery konkurencji
                 </p>
               </div>
-              <figcaption class="card-set-tittle">
-                <p class="title-project">Growing Business</p>
-                <p class="type-project">Aplikacja</p>
+              <figcaption class="card__project">
+                <p class="card__tittle">Growing Business</p>
+                <p class="card__type">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
