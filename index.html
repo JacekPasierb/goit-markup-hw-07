@@ -494,35 +494,52 @@
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
         <form class="form-order">
-          <h4 class="head-in-form">Zostaw swoje dane w formularzu poniżej</h4>
+          <h4 class="form-order__head">
+            Zostaw swoje dane w formularzu poniżej
+          </h4>
           <fieldset class="fieldset">
-            <div class="input-order">
-              <label class="label-order" for="name">Imię</label>
-              <svg class="icon-order">
+            <div class="form-order__item">
+              <label class="form-order__label" for="name">Imię</label>
+              <svg class="form-order__icon">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
-              <input class="input" name="name" type="text" id="name" />
+              <input
+                class="form-order__input"
+                name="name"
+                type="text"
+                id="name"
+              />
             </div>
-            <div class="input-order">
-              <label class="label-order" for="phone">Telefon</label>
-              <svg class="icon-order">
+            <div class="form-order__item">
+              <label class="form-order__label" for="phone">Telefon</label>
+              <svg class="form-order__icon">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
-              <input class="input" name="phone" type="tel" id="phone" />
+              <input
+                class="form-order__input"
+                name="phone"
+                type="tel"
+                id="phone"
+              />
             </div>
-            <div class="input-order">
-              <label class="label-order" for="mail">Email</label>
-              <svg class="icon-order">
+            <div class="form-order__item">
+              <label class="form-order__label" for="mail">Email</label>
+              <svg class="form-order__icon">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
-              <input class="input" name="mail" type="mail" id="mail" />
+              <input
+                class="form-order__input"
+                name="mail"
+                type="mail"
+                id="mail"
+              />
             </div>
 
-            <div class="input-order-comment">
-              <label class="label-order" for="comment">Komentarz</label>
+            <div class="form-order__item__comment">
+              <label class="form-order__label" for="comment">Komentarz</label>
 
               <textarea
-                class="input"
+                class="form-order__input"
                 name="comment"
                 type="text"
                 id="comment"
