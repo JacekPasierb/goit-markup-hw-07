@@ -150,8 +150,8 @@ a:focus {
   color: var(--background-color-three);
 
   fill: #757575;
-display: flex;
-align-items:center;
+  display: flex;
+  align-items: center;
   /* will-change: fill; */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -606,7 +606,7 @@ ul:not(.adress) {
   color: rgba(33, 150, 243, 1);
   margin-inline: 4px;
 }
-.checkbox-accept__label .checkbox__icon {
+.checkbox-accept__icon {
   position: absolute;
   left: -16px;
   width: 16px;
@@ -617,18 +617,18 @@ ul:not(.adress) {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox__icon__icon-bird {
+.checkbox-accept__icon-bird {
   display: none;
   width: 11px;
   height: 8px;
   position: absolute;
   left: -14px;
 }
-.checkbox-accept__label input:checked ~ .checkbox__icon {
+.checkbox-accept__label input:checked ~ .checkbox-accept__icon {
   background-color: rgba(33, 150, 243, 1);
   border-color: rgba(33, 150, 243, 1);
 }
-.checkbox-accept__label input:checked ~ .checkbox__icon__icon-bird {
+.checkbox-accept__label input:checked ~ .checkbox-accept__icon-bird {
   display: inline-block;
 }
 /* ===================== > FILTER PORTFOLIO < ===============================*/
