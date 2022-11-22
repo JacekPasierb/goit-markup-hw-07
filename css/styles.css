@@ -80,15 +80,16 @@ a:focus {
   --one-color-logo: #2196f3;
   --two-color-logo: #000000;
 }
-.header {
-  border-bottom: 1px solid #ececec;
-}
+
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
-
+/* HEADER */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 /* ===================== >   LOGO < ===============================*/
 .logo {
   font-family: "Raleway";
