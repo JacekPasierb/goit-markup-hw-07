@@ -60,10 +60,6 @@ button:focus {
   display: flex;
   align-items: center;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .block {
   display: block;
 }
@@ -85,6 +81,10 @@ button:focus {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* HEADER */
 .header {
