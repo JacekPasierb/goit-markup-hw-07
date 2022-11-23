@@ -1,0 +1,27 @@
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: #212121;
+  }
+  h1,
+h2,
+h3,
+h4,
+p,
+ul,
+figure,
+fieldset {
+  margin: 0;
+  padding: 0px;
+}
+a {
+  color: #212121;
+  text-decoration: none;
+
+  /* will-change: color; */
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+a:hover,
+a:focus {
+  color: #2196f3;
+}
