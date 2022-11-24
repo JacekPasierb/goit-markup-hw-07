@@ -1,22 +1,21 @@
 .head {
-    display: flex;
-    padding-block: 200px;
-    background-color: var(--background-color);
-  }
-  .head__overlays {
+  display: flex;
+  padding-block: 200px;
+  background-color: var(--background-color);
+  &__overlays {
     margin: 0 auto;
     background-image: linear-gradient(#2f303a66, #2f303a66),
       url(../images/Img.jpg);
     background-size: cover;
     max-width: 1600px;
   }
-  .head__flex {
+  &__flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .head__tittle {
+  &__tittle {
     width: 696px;
     height: 120px;
     font-size: 44px;
@@ -29,3 +28,7 @@
     display: flex;
     margin-bottom: 30px;
   }
+  &__button {
+    padding: 10px 41px 10px 42px;
+  }
+}

@@ -1,8 +1,8 @@
 body {
-    font-family: "Roboto", "Raleway", sans-serif;
-    color: #212121;
-  }
-  h1,
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: #212121;
+}
+h1,
 h2,
 h3,
 h4,
@@ -20,25 +20,27 @@ a {
   /* will-change: color; */
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-a:hover,
-a:focus {
+  &:hover,
+&:focus {
   color: #2196f3;
 }
+}
+
 button {
   /* will-change: transition; */
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-button:hover,
-button:focus {
+  &:hover,
+&:focus {
   background-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+}
+
+
 ul:not(.adress) {
   list-style: none;
   display: flex;
